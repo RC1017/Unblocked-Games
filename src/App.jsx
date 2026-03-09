@@ -73,30 +73,43 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
             >
-              {filteredGames.map((game) => (
-                <motion.div
-                  key={game.id}
-                  layoutId={game.id}
-                  onClick={() => setSelectedGame(game)}
-                  className="group relative bg-white/5 rounded-2xl overflow-hidden border border-white/5 hover:border-emerald-500/30 transition-all cursor-pointer"
-                  whileHover={{ y: -4 }}
-                >
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={game.thumbnail}
-                      alt={game.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      referrerPolicy="no-referrer"
-                    />
+              {filteredGames.length > 0 ? (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                  {filteredGames.map((game) => (
+                    <motion.div
+                      key={game.id}
+                      layoutId={game.id}
+                      onClick={() => setSelectedGame(game)}
+                      className="group relative bg-white/5 rounded-2xl overflow-hidden border border-white/5 hover:border-emerald-500/30 transition-all cursor-pointer"
+                      whileHover={{ y: -4 }}
+                    >
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                          src={game.thumbnail}
+                          alt={game.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+                      <div className="p-4 bg-gradient-to-t from-black/80 to-transparent">
+                        <h3 className="font-semibold text-sm tracking-wide">{game.title}</h3>
+                        <p className="text-xs text-white/40 mt-1">Play Now</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-col items-center justify-center py-20 text-center">
+                  <div className="p-6 bg-white/5 rounded-full mb-4">
+                    <Gamepad2 className="w-12 h-12 text-white/20" />
                   </div>
-                  <div className="p-4 bg-gradient-to-t from-black/80 to-transparent">
-                    <h3 className="font-semibold text-sm tracking-wide">{game.title}</h3>
-                    <p className="text-xs text-white/40 mt-1">Play Now</p>
-                  </div>
-                </motion.div>
-              ))}
+                  <h3 className="text-xl font-semibold text-white/60">No games found</h3>
+                  <p className="text-white/40 mt-2 max-w-xs">
+                    {searchQuery ? `We couldn't find any games matching "${searchQuery}"` : "The game library is currently empty. Check back later!"}
+                  </p>
+                </div>
+              )}
             </motion.div>
           ) : (
             <motion.div

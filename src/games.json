@@ -1,38 +1,8 @@
 [
   {
-    "id": "2048",
-    "title": "2048",
-    "thumbnail": "https://picsum.photos/seed/2048/400/300",
-    "url": "https://play2048.co/"
-  },
-  {
-    "id": "tetris",
-    "title": "Tetris",
-    "thumbnail": "https://picsum.photos/seed/tetris/400/300",
-    "url": "https://tetris.com/play-tetris"
-  },
-  {
-    "id": "pacman",
-    "title": "Pac-Man",
-    "thumbnail": "https://picsum.photos/seed/pacman/400/300",
-    "url": "https://www.google.com/logos/2010/pacman10-i.html"
-  },
-  {
-    "id": "snake",
-    "title": "Snake",
-    "thumbnail": "https://picsum.photos/seed/snake/400/300",
-    "url": "https://www.google.com/logos/2010/pacman10-i.html"
-  },
-  {
-    "id": "flappy-bird",
-    "title": "Flappy Bird",
-    "thumbnail": "https://picsum.photos/seed/flappy/400/300",
-    "url": "https://flappybird.io/"
-  },
-  {
-    "id": "doodle-jump",
-    "title": "Doodle Jump",
-    "thumbnail": "https://picsum.photos/seed/jump/400/300",
-    "url": "https://doodlejump.io/"
+    "id": "basket-random",
+    "title": "Basket Random",
+    "thumbnail": "https://picsum.photos/seed/basket/400/300",
+    "url": "https://www.twoplayergames.org/gameframe/basket-random"
   }
 ]
