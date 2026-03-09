@@ -1,0 +1,32 @@
+[
+  {
+    "id": "basket-random",
+    "title": "Basket Random",
+    "thumbnail": "https://play-lh.googleusercontent.com/6AN9KKe5M9udzoQA1J00dc6po5dNY9JInI_ewDKcPXocPjEHWTqJV0d2CwSWxYRhTh4=w526-h296-rw",
+    "url": "https://www.twoplayergames.org/gameframe/basket-random"
+  },
+  {
+    "id": "tag",
+    "title": "Tag",
+    "thumbnail": "https://taggame.io/data/image/options/tag-game-banner-tgio.png",
+    "url": "https://quiz-50.github.io/action-games/tag/"
+  },
+  {
+    "id": "drive-mad",
+    "title": "Drive Mad",
+    "thumbnail": "https://img-cdn.heygame.io/gameimages/ea280006-62fc-4939-9af4-2f18f068bb69-Drive-Mad.png",
+    "url": "https://quiz-50.github.io/driving-games/drive-mad/"
+  },
+  {
+    "id": "retro-bowl",
+    "title": "Retro Bowl",
+    "thumbnail": "https://i1.sndcdn.com/artworks-0oxFqbHa8wEE4fSa-J0aZKw-t500x500.jpg",
+    "url": "https://quiz-50.github.io/driving-games/retro-bowl/"
+  },
+  {
+    "id": "bitlife",
+    "title": "BitLife",
+    "thumbnail": "https://play-lh.googleusercontent.com/fUM-UyywXxjC8soxAZdIlxJrlRRXmql8wkE426SHzft4lJycSKVd2jCYQQX1BEG9Xw",
+    "url": "https://quiz-50.github.io/strategy-games/bitlife/"
+  }
+]
